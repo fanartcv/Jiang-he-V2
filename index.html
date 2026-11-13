@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Thousand Years, Still You — A Tribute to Jiang He</title>
+<meta name="description" content="A romantic editorial tribute to Jiang He.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lora:ital@0;1&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="petals" id="petals" aria-hidden="true"></div>
+<audio id="audio" loop preload="none" src="assets/music/ambient.mp3"></audio>
+<nav class="nav" aria-label="Sections">
+  <a class="brand" href="#top">Jiang He</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <ul id="menu"><li><a href="#little">Her</a></li><li><a href="#plates">Gallery</a></li><li><a href="#letters">Letters</a></li><li><a href="#closing">Closing</a></li></ul>
+  <button class="music" id="music" aria-pressed="false" aria-label="Play ambient music">♪ <span>off</span></button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-copy reveal">
+    <p class="label">A love letter in four colors</p>
+    <h1>Have you ever seen someone so beautiful that even <em>time seems to stop?</em></h1>
+    <p class="sub">Somewhere between a thousand years of history and an ordinary modern day, there was her.</p>
+    <a class="btn" href="#little">Meet Her <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="hero-art reveal">
+    <span class="frame-line" aria-hidden="true"></span>
+    <img class="main" src="assets/images/red.webp" width="720" height="1280" alt="Jiang He in a red embroidered dress, smiling with her eyes closed" loading="eager" fetchpriority="high" decoding="async">
+    <figure class="inset"><img src="assets/images/blush.webp" width="720" height="1280" alt="Jiang He blushing, her chin resting on her hand" loading="lazy" decoding="async"><figcaption>Plate II — a quieter moment</figcaption></figure>
+    <svg class="blossom" viewBox="0 0 60 60" aria-hidden="true"><g fill="#B88C80" fill-opacity=".8"><ellipse cx="30" cy="16" rx="9" ry="14"/><ellipse cx="30" cy="16" rx="9" ry="14" transform="rotate(72 30 30)"/><ellipse cx="30" cy="16" rx="9" ry="14" transform="rotate(144 30 30)"/><ellipse cx="30" cy="16" rx="9" ry="14" transform="rotate(216 30 30)"/><ellipse cx="30" cy="16" rx="9" ry="14" transform="rotate(288 30 30)"/></g><circle cx="30" cy="30" r="4.5" fill="#704D4B"/></svg>
+  </div>
+</header>
+<div class="peach-divider" aria-hidden="true"></div>
+
+<section class="band" aria-label="Little things about her">
+  <div class="band-head reveal"><span class="num">02</span><h2>Little things about her</h2></div>
+  <ol class="index" id="index"></ol>
+</section>
+
+<section class="little" id="little">
+  <figure class="trait-art reveal"><img id="traitImg" src="assets/images/bride.webp" width="720" height="1280" alt="" loading="lazy" decoding="async"></figure>
+  <div class="trait-copy reveal">
+    <p class="label">02 — Little things about her</p>
+    <h2 id="traitTitle" aria-live="polite">Beautiful, effortlessly.</h2>
+    <p id="traitText" class="trait-text">She never has to try. One quiet look from across the room, and everything around her seems to rearrange itself, politely, around her.</p>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Choose a trait"></div>
+    <p class="note">Choose a number to change the trait, the text and the illustration.</p>
+  </div>
+</section>
+
+<section class="plates" id="plates">
+  <div class="plates-head reveal"><div><p class="label">03 — Plates</p><h2>Every glance, kept.</h2></div><p class="count" id="count">01 / 04</p></div>
+  <div class="strip reveal" id="strip"></div>
+  <p class="plate-cap"><em id="plateName">Plate 01</em> Tap a plate to open it and read the line hidden behind it.</p>
+</section>
+
+<dialog class="lightbox" id="lightbox" aria-label="Plate">
+  <img id="lbImg" src="" alt="" width="720" height="1280">
+  <p class="lb-line" id="lbLine"></p>
+  <button class="btn" id="lbClose">Close</button>
+</dialog>
+
+<section class="letters" id="letters">
+  <p class="label reveal">04 — Letters to Jiang He</p>
+  <h2 class="reveal">Words she may never hear aloud.</h2>
+  <div class="letter-board" id="board"></div>
+  <p class="note">Touch a letter to open it.</p>
+  <div class="say reveal">
+    <p class="say-out" id="sayOut" aria-live="polite">…</p>
+    <button class="btn" id="sayBtn">Tell Jiang He Something</button>
+  </div>
+</section>
+
+<section class="closing" id="closing">
+  <div class="closing-copy reveal">
+    <p class="label">06 — If I could choose again</p>
+    <p class="final">If I were given a thousand years, I would <em>still choose to meet you.</em></p>
+    <a class="read-again" href="#top" id="again">Read again <span aria-hidden="true">↑</span></a>
+  </div>
+  <figure class="closing-art reveal"><img src="assets/images/together.webp" width="720" height="1280" alt="Jiang He and Xu Qing" loading="lazy" decoding="async"></figure>
+</section>
+<footer class="foot">A thousand years, still you</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
